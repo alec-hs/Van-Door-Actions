@@ -47,11 +47,13 @@ class CfgVehicles {
 				statement = "this animateDoor ['Door_1_source', 0,false];";
 			};
 
+			/*Added  "&& (diver this != player)" to condition to check player is not in driver seat*/
+
 			class open_passenger_door: door_action {
 				userActionID = 55;
 				displayName = "Open Passenger Door";
 				available = 1;
-				condition = "(this animationPhase 'Door_2_source' == 0) && ((player distance2D (this modelToWorld [1,2.2,-1])) < 2)";
+				condition = "(this animationPhase 'Door_2_source' == 0) && ((player distance2D (this modelToWorld [1,2.2,-1])) < 2)  && (diver this != player)";
 				statement = "this animateDoor ['Door_2_source', 1,false];";
 			};
 
@@ -59,7 +61,7 @@ class CfgVehicles {
 				userActionID = 56;
 				displayName = "Close Passenger Door";
 				available = 1;
-				condition = "(this animationPhase 'Door_2_source' == 1) && ((player distance2D (this modelToWorld [1,2.2,-1])) < 2)";
+				condition = "(this animationPhase 'Door_2_source' == 1) && ((player distance2D (this modelToWorld [1,2.2,-1])) < 2)  && (diver this != player)";
 				statement = "this animateDoor ['Door_2_source', 0,false];";
 			};
 
@@ -67,7 +69,7 @@ class CfgVehicles {
 				userActionID = 57;
 				displayName = "Open Side Door";
 				available = 1;
-				condition = "(this animationPhase 'Door_3_source' == 0) && ((player distance2D (this modelToWorld [1,1,-1])) < 2)";
+				condition = "(this animationPhase 'Door_3_source' == 0) && ((player distance2D (this modelToWorld [1,1,-1])) < 2)  && (diver this != player)";
 				statement = "this animateDoor ['Door_3_source', 1,false];";
 			};
 
@@ -75,7 +77,7 @@ class CfgVehicles {
 				userActionID = 58;
 				displayName = "Close Side Door";
 				available = 1;
-				condition = "(this animationPhase 'Door_3_source' == 1) && ((player distance2D (this modelToWorld [1,1,-1])) < 2)";
+				condition = "(this animationPhase 'Door_3_source' == 1) && ((player distance2D (this modelToWorld [1,1,-1])) < 2)  && (diver this != player)";
 				statement = "this animateDoor ['Door_3_source', 0,false];";
 			};
 
@@ -83,7 +85,7 @@ class CfgVehicles {
 				userActionID = 59;
 				displayName = "Open Back Door";
 				available = 1;
-				condition = "(this animationPhase 'Door_4_source' == 0) && ((player distance2D (this modelToWorld [0,-3,-1])) < 2)";
+				condition = "(this animationPhase 'Door_4_source' == 0) && ((player distance2D (this modelToWorld [0,-3,-1])) < 2)  && (diver this != player)";
 				statement = "this animateDoor ['Door_4_source', 1,false];";
 			};
 
@@ -91,7 +93,7 @@ class CfgVehicles {
 				userActionID = 60;
 				displayName = "Close Back Door";
 				available = 1;
-				condition = "(this animationPhase 'Door_4_source' == 1) && ((player distance2D (this modelToWorld [0,-3,-1])) < 2)";
+				condition = "(this animationPhase 'Door_4_source' == 1) && ((player distance2D (this modelToWorld [0,-3,-1])) < 2)  && (diver this != player)";
 				statement = "this animateDoor ['Door_4_source', 0,false];";
 			};
 		};
