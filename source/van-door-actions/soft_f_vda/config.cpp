@@ -3,7 +3,7 @@ class CfgPatches {
 
 	class soft_f_vda {
 		author = "Flax";
-		name = "Port Authority Light Vehicles";
+		name = "Vehicle Door Actions Light Vehicles";
 		requiredAddons[] = {};
 		requiredVersion = 0.100000;
 		units[] = {};
