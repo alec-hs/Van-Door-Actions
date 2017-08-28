@@ -9,6 +9,7 @@ class CfgPatches {
 	};
 };
 
+
 class CfgVehicles {
 
 	class Van_02_base_F {
