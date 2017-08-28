@@ -1,12 +1,12 @@
 name = "Vehicle Door Actions";
-picture = "data_f_vda\UI_icons\logo_vda_ca.paa";
+picture = "\A3_VDA\data_f_vda\UI\logo_vda_ca.paa";
 actionName = "Website";
 action = "https://arma.kestrelstudios.co.uk";
 description = "Vehicle Door Actions - Version 1.0.0";
-logo = "data_f_vda\UI_icons\logo_vda_ca.paa";
-logoOver = "data_f_vda\UI_icons\logo_vda_over_ca.paa";
+logo = "\A3_VDA\data_f_vda\UI\logo_vda_ca.paa";
+logoOver = "\A3_VDA\data_f_vda\UI\logo_vda_over_ca.paa";
 tooltip = "Vehicle Door Actions";
 tooltipOwned = "Vehicle Door Actions Owned";
 overview = "Vehicle Door Actions";
 author = "Flax";
-overviewPicture = "data_f_vda\UI_icons\logo_vda_ca.paa";
+overviewPicture = "\A3_VDA\data_f_vda\UI\logo_vda_ca.paa";
