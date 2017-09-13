@@ -1,4 +1,3 @@
-
 class CfgPatches {
 	class VDA_Soft_MRAP_02 {
     addonRootClass = "VDA_Soft";
