@@ -1,15 +1,3 @@
-
-class CfgPatches {
-	class soft_f_vda_MRAP_03 {
-    addonRootClass = "soft_f_vda";
-    requiredAddons[] = {"soft_f_vda"};
-    requiredVersion = 0.1;
-    units[] = {};
-    weapons[] = {};
-	};
-};
-
-
 class CfgVehicles {
 
 	class MRAP_03_base_F {

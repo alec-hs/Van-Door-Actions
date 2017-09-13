@@ -1,0 +1,11 @@
+name = "Vehicle Door Actions";
+picture = "\k\vda\addons\data\ui\logo_vda_ca.paa";
+actionName = "Website";
+action = "https://arma.kestrelstudios.co.uk";
+description = "Vehicle Door Actions - Version 1.0.0";
+logo = "\k\vda\addons\data\ui\logo_vda_ca.paa";
+logoOver = "\k\vda\addons\data\ui\logo_vda_over_ca.paa";
+tooltip = "Vehicle Door Actions";
+overview = "Vehicle Door Actions";
+author = "Flax";
+overviewPicture = "\k\vda\addons\data\ui\logo_vda_ca.paa";

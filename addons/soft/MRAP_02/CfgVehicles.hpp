@@ -1,15 +1,3 @@
-
-class CfgPatches {
-	class soft_f_vda_MRAP_02 {
-    addonRootClass = "soft_f_vda";
-    requiredAddons[] = {"soft_f_vda"};
-    requiredVersion = 0.1;
-    units[] = {};
-    weapons[] = {};
-	};
-};
-
-
 class CfgVehicles {
 
 	class MRAP_02_base_F {
@@ -30,36 +18,68 @@ class CfgVehicles {
 				statement = "";
 			};
 
-			class open_left_door: door_action {
+			class open_left_front_door: door_action {
 				userActionID = 53;
-				displayName = "Open Left Door";
+				displayName = "Open Left Front Door";
 				available = 1;
 				condition = "(this animationPhase 'Door_LF' == 0) && ((player distance2D (this modelToWorld [-0.8,-0.8,-0.5])) < 2) && (!((this getCargoIndex player) in [0,1,2,3]))";
 				statement = "this animateDoor ['Door_LF', 1,false];";
 			};
 
-			class close_left_door: door_action {
+			class close_left_front_door: door_action {
 				userActionID = 54;
-				displayName = "Close Left Door";
+				displayName = "Close Left Front Door";
 				available = 1;
 				condition = "(this animationPhase 'Door_LF' == 1) && ((player distance2D (this modelToWorld [-0.8,-0.8,-0.5])) < 2) && (!((this getCargoIndex player) in [0,1,2,3]))";
 				statement = "this animateDoor ['Door_LF', 0,false];";
 			};
 
-			class open_right_door: door_action {
+			class open_left_middle_door: door_action {
 				userActionID = 53;
-				displayName = "Open Right Door";
+				displayName = "Open Left Middle Door";
+				available = 1;
+				condition = "(this animationPhase 'Door_LM' == 0) && ((player distance2D (this modelToWorld [-0.8,-2,-0.5])) < 2) && (!((this getCargoIndex player) in [2,3]) && (driver this != player))";
+				statement = "this animateDoor ['Door_LM', 1,false];";
+			};
+
+			class close_left_middle_door: door_action {
+				userActionID = 54;
+				displayName = "Close Left Middle Door";
+				available = 1;
+				condition = "(this animationPhase 'Door_LM' == 1) && ((player distance2D (this modelToWorld [-0.8,-2,-0.5])) < 2) && (!((this getCargoIndex player) in [2,3]) && (driver this != player))";
+				statement = "this animateDoor ['Door_LM', 0,false];";
+			};
+
+			class open_right_front_door: door_action {
+				userActionID = 53;
+				displayName = "Open Right Front Door";
 				available = 1;
 				condition = "(this animationPhase 'Door_RF' == 0) && ((player distance2D (this modelToWorld [0.8,-0.8,-0.5])) < 2) && (!((this getCargoIndex player) in [0,1,2,3]))";
 				statement = "this animateDoor ['Door_RF', 1,false];";
 			};
 
-			class close_right_door: door_action {
+			class close_right_front_door: door_action {
 				userActionID = 54;
-				displayName = "Close Right Door";
+				displayName = "Close Right Front Door";
 				available = 1;
 				condition = "(this animationPhase 'Door_RF' == 1) && ((player distance2D (this modelToWorld [0.8,-0.8,-0.5])) < 2) && (!((this getCargoIndex player) in [0,1,2,3]))";
 				statement = "this animateDoor ['Door_RF', 0,false];";
+			};
+
+			class open_right_middle_door: door_action {
+				userActionID = 53;
+				displayName = "Open Right Middle Door";
+				available = 1;
+				condition = "(this animationPhase 'Door_RM' == 0) && ((player distance2D (this modelToWorld [0.8,-2,-0.5])) < 2) && (!((this getCargoIndex player) in [2,3]) && (driver this != player))";
+				statement = "this animateDoor ['Door_RM', 1,false];";
+			};
+
+			class close_right_middle_door: door_action {
+				userActionID = 54;
+				displayName = "Close Right Middle Door";
+				available = 1;
+				condition = "(this animationPhase 'Door_RM' == 1) && ((player distance2D (this modelToWorld [0.8,-2,-0.5])) < 2) && (!((this getCargoIndex player) in [2,3]) && (driver this != player))";
+				statement = "this animateDoor ['Door_RM', 0,false];";
 			};
 
 			class open_back_door: door_action {

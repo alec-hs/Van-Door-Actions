@@ -1,15 +1,3 @@
-
-class CfgPatches {
-	class soft_f_vda_Van_02 {
-    addonRootClass = "soft_f_vda";
-    requiredAddons[] = {"soft_f_vda"};
-    requiredVersion = 0.1;
-    units[] = {};
-    weapons[] = {};
-	};
-};
-
-
 class CfgVehicles {
 
 	class Van_02_base_F {
