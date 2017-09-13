@@ -1,9 +1,9 @@
 
 class CfgPatches {
-	class soft_f_vda {
+	class VDA_Soft {
 		author = "Flax";
 		name = "Vehicle Door Actions - Unarmored Land Vehicles";
-		requiredAddons[] = {"baseconfig_f_vda"};
+		requiredAddons[] = {"VDA_Baseconfig", "A3_Soft_F"};
 		requiredVersion = 0.1;
 		units[] = {};
 		weapons[] = {};
